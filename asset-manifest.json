@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/star-wars-scout/static/css/main.2cce8147.chunk.css",
+    "main.js": "/star-wars-scout/static/js/main.a28d0b50.chunk.js",
+    "main.js.map": "/star-wars-scout/static/js/main.a28d0b50.chunk.js.map",
+    "runtime~main.js": "/star-wars-scout/static/js/runtime~main.4f86593b.js",
+    "runtime~main.js.map": "/star-wars-scout/static/js/runtime~main.4f86593b.js.map",
+    "static/js/2.b41502e9.chunk.js": "/star-wars-scout/static/js/2.b41502e9.chunk.js",
+    "static/js/2.b41502e9.chunk.js.map": "/star-wars-scout/static/js/2.b41502e9.chunk.js.map",
+    "index.html": "/star-wars-scout/index.html",
+    "precache-manifest.d690ba5afbe0fc220aa3087de7c3de0e.js": "/star-wars-scout/precache-manifest.d690ba5afbe0fc220aa3087de7c3de0e.js",
+    "service-worker.js": "/star-wars-scout/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/star-wars-scout/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/star-wars-scout/static/media/logo.5d5d9eef.svg"
+  }
+}
