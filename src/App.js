@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { CardList } from './component/card-list/card-list.component';
+
 class App extends Component {
   peopleDetails = [];
 
@@ -37,11 +39,14 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        {
-          this.state.people.map(people=>{
-              return <h1 key={people.name}>{ people.name }</h1>
-          })
-        }
+
+        <CardList>
+          {
+            this.state.people.map(people=>{
+                return <h1 key={people.name}>{ people.name }</h1>
+            })
+          }
+        </CardList>
       </div>
     );
   }
