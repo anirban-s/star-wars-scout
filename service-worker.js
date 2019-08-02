@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/star-wars-scout/precache-manifest.bf1bcb344dfd7749690e920fbfadbb07.js"
+  "/star-wars-scout/precache-manifest.b70af60e2af0cfcfe55fc661a763e940.js"
 );
 
 self.addEventListener('message', (event) => {
