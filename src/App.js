@@ -10,7 +10,7 @@ class App extends Component {
     super();
 
     this.state = {
-      people: []
+      peoples: []
     }
 
   }
@@ -22,7 +22,7 @@ class App extends Component {
   bindPeopleState = (response) => {
     for(let people of response.results){
       this.peopleDetails.push(people);
-      this.setState({people: this.peopleDetails})
+      this.setState({peoples: this.peopleDetails})
     }
 
     if(response.next){
@@ -39,14 +39,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-
-        <CardList>
-          {
-            this.state.people.map(people=>{
-                return <h1 key={people.name}>{ people.name }</h1>
-            })
-          }
-        </CardList>
+        <CardList peoples={this.state.peoples} />
       </div>
     );
   }
