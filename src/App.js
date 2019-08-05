@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { CardList } from './component/card-list/card-list.component';
+import { SearchBox } from './component/search-box/search-box.component';
 
 class App extends Component {
   peopleDetails = [];
@@ -10,7 +11,8 @@ class App extends Component {
     super();
 
     this.state = {
-      peoples: []
+      peoples: [],
+      searchField: ''
     }
 
   }
@@ -36,10 +38,21 @@ class App extends Component {
       .then(response => this.bindPeopleState(response));
   }
 
+  handleChange = (event) => {
+    this.setState({searchField : event.target.value })
+  }
+
   render(){
+    const { peoples, searchField } = this.state;
+    const filteredPeople = peoples.filter(people => {
+      return people.name.toLowerCase().includes(searchField.toLowerCase())
+    })
     return (
       <div className="App">
-        <CardList peoples={this.state.peoples} />
+        <SearchBox
+          placeholder='Search your character'
+          handleChange={this.handleChange }/>
+        <CardList peoples={filteredPeople} />
       </div>
     );
   }
