@@ -2,7 +2,7 @@
 .card-list {
   width: 100%;
   margin: 0 auto;
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }

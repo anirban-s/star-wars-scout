@@ -23,11 +23,16 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+font-family: 'star wars';
+/* font-style: normal; */
+font-weight: normal;
+src: local('star wars'), url('STARWARS.woff') format('woff');
+}
+
+h1 {
+	font-family: 'star wars';
+	text-transform: uppercase;
+  font-size: 3rem;
+  	/* -webkit-text-stroke: 0.5px yellow; */
 }
